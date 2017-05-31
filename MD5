@@ -1,0 +1,14 @@
+2979adb74d3680036499fca56e042e32 *DESCRIPTION
+6fee1d66665e9a13b787da64671eff08 *NAMESPACE
+8d58dd4031d425eb658ddd70bc8b385d *R/logistic4p.R
+339e243d0853d384c22fc3dcbca8bcfb *build/partial.rdb
+268b7c7999c34558255fd496c26e0a6c *data/nlsy.RData
+3dfada15bfff9108c211cb0ecca616d6 *man/logistic.Rd
+3aff18bc6e18725476f255dd2e5243d9 *man/logistic4p-package.Rd
+6909a5741682c7b6882d8c6006818822 *man/logistic4p.Rd
+7387f1afe9423f9ee3e7d2c422f436e6 *man/logistic4p.e.Rd
+30087545b189a5dbc4bcd21543a588ee *man/logistic4p.fn.Rd
+f279a53a7f5843c1af6870358992740b *man/logistic4p.fp.Rd
+b8fb975dfab30b8907243535f9af2bc0 *man/logistic4p.fp.fn.Rd
+5c0279d3885c0db0ae153174d602e062 *man/nlsy.Rd
+c580e7b6cf9bff5b18266cd18d8c9288 *man/print.logistic4p.Rd
