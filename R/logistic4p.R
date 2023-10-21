@@ -41,7 +41,7 @@ logistic <- function(x, y, initial, max.iter=1000, epsilon=1e-6, detail=FALSE){
     D <- cbind(as.vector(F*(1-F))*x)
     gamma1 <- try(ginv(t(D)%*%W%*%D)%*%t(D)%*%W%*%(as.matrix(y-p.i)+D%*%as.matrix(gamma0)),silent=TRUE)
     
-    if(class(gamma1)!='try-error'){
+    if( !inherits(gamma1,  "try-error") ){
       d <- max(abs(gamma1-gamma0))
       gamma0 <- gamma1 
       n.iter <- n.iter + 1
@@ -116,7 +116,7 @@ logistic4p.fp.fn<-function(x, y, initial, max.iter=1000, epsilon=1e-6, detail=FA
     D <- cbind(1-F, -F, as.vector((1-gamma0[1]-gamma0[2])*F*(1-F))*x)
     gamma1 <- try(ginv(t(D)%*%W%*%D)%*%t(D)%*%W%*%(as.matrix(y-pi)+D%*%as.matrix(gamma0)),silent=TRUE)
     
-    if(class(gamma1)!='try-error'){
+    if(!inherits(gamma1,  "try-error")){
       d <- max(abs(gamma1-gamma0))
       gamma0=gamma1
       n.iter <- n.iter + 1
@@ -185,7 +185,7 @@ logistic4p.fp<-function(x, y, initial, max.iter=1000, epsilon=1e-6, detail=FALSE
     D=cbind(1-F, as.vector((1-gamma0[1])*F*(1-F))*x)
     gamma1=try(ginv(t(D)%*%W%*%D)%*%t(D)%*%W%*%(as.matrix(y-pi)+D%*%as.matrix(gamma0)), silent=TRUE)
     
-    if(class(gamma1)!='try-error'){
+    if(!inherits(gamma1,  "try-error")){
       d <- max(abs(gamma1-gamma0))
       gamma0 <- gamma1
       
@@ -256,7 +256,7 @@ logistic4p.fn<-function(x, y, initial, max.iter=1000, epsilon=1e-6, detail=FALSE
     D=cbind(-F, as.vector((1-gamma0[1])*F*(1-F))*x)
     gamma1=try(ginv(t(D)%*%W%*%D)%*%t(D)%*%W%*%(as.matrix(y-pi)+D%*%as.matrix(gamma0)),silent=TRUE)
     
-    if(class(gamma1)!='try-error'){
+    if(!inherits(gamma1,  "try-error")){
       d <- max(abs(gamma1-gamma0))
       gamma0 <- gamma1
       
@@ -327,7 +327,7 @@ logistic4p.e<-function(x, y, initial, max.iter=1000, epsilon=1e-6, detail=FALSE)
     D=cbind(1-2*F, as.vector((1-2*gamma0[1])*F*(1-F))*x)
     gamma1=try(ginv(t(D)%*%W%*%D)%*%t(D)%*%W%*%(as.matrix(y-pi)+D%*%as.matrix(gamma0)),silent=TRUE)
     
-    if(class(gamma1)!='try-error'){
+    if(!inherits(gamma1,  "try-error")){
       d <- max(abs(gamma1-gamma0))
       gamma0 <- gamma1
       

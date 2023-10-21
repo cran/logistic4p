@@ -23,7 +23,6 @@ Maintainer: \packageMaintainer{logistic4p}
 
 }
 
-\keyword{Logistic regression, misclassification, binary outcome }
 
 \examples{
 \dontrun{

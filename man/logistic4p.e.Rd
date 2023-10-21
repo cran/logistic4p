@@ -22,7 +22,7 @@ estimates obtained from the logistic regression for the parameters in the linear
 a positive integer giving the maximal number of iterations; if it is reached, the algorithm will stop.
   }
   \item{epsilon}{
-a positive convergence tolerance epsilon; the iterations converge when max(|par-par_{old}|)<epsilon.
+a positive convergence tolerance epsilon.
 }
   \item{detail}{
 logical indicating if the itermediate output should be printed after each iteration.
@@ -33,7 +33,7 @@ logical indicating if the itermediate output should be printed after each iterat
 
 \item{estimates}{ a named matrix of estimates including parameter estimates, standard errors, z-scores, and p-values.}
 \item{n.iter }{ an integer giving the number of iteration used}
-\item{d}{ the actual max absolute difference of the parameters of the last two iterations, d=max(|par.final-par_{old}|).}
+\item{d}{ the actual max absolute difference of the parameters of the last two iterations.}
 \item{loglike}{ loglikelihood evaluated at the parameter estimates.}
 \item{AIC}{ Akaike Information Criterion.}
 \item{BIC}{ Bayesian Information Criterion.}
